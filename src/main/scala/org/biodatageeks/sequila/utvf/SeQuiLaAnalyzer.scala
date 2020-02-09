@@ -66,7 +66,7 @@ class SeQuiLaAnalyzer(catalog: SessionCatalog, conf: SQLConf) extends Analyzer(c
     Batch("Post-Hoc Resolution", Once, postHocResolutionRules: _*),
     Batch("SeQuiLa", Once,sequilaOptmazationRules: _*), //SeQuilaOptimization rules
     Batch("View", Once,
-      /*AliasViewChild*/EliminateView),
+      /*#todo AliasViewChild*/EliminateView),
     Batch("Nondeterministic", Once,
       PullOutNondeterministic),
     Batch("UDF", Once,
