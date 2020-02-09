@@ -66,7 +66,9 @@ class SeQuiLaAnalyzer(catalog: SessionCatalog, conf: SQLConf) extends Analyzer(c
     Batch("Post-Hoc Resolution", Once, postHocResolutionRules: _*),
     Batch("SeQuiLa", Once,sequilaOptmazationRules: _*), //SeQuilaOptimization rules
     Batch("View", Once,
-      /*#todo AliasViewChild*/EliminateView),
+      /*#todo AliasViewChild
+      * https://github.com/mgaido91/spark/blob/0d334e33dcbbfbbf3c69cd0c26b5ce497a77675c/sql/catalyst/src/main/scala/org/apache/spark/sql/catalyst/analysis/view.scala#L31-L50
+      * */EliminateView),
     Batch("Nondeterministic", Once,
       PullOutNondeterministic),
     Batch("UDF", Once,
