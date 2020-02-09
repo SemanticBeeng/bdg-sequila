@@ -6,6 +6,8 @@ target/
 \.idea/
 
 build/
+project/.boot/
+
 
 .DS_Store
 
