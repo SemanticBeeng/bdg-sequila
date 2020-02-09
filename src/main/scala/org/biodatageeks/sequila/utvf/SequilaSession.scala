@@ -3,7 +3,7 @@ package org.apache.spark.sql
 
 import org.apache.spark.sql.SparkSession.Builder
 import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.sql.catalyst.analysis.{AliasViewChild, Analyzer, CleanupAliases, EliminateUnions, ResolveCreateNamedStruct, ResolveHints, ResolveInlineTables, ResolveTableValuedFunctions, ResolveTimeZone, SeQuiLaAnalyzer, SubstituteUnresolvedOrdinals, TimeWindowing, TypeCoercion, UpdateOuterReferences}
+import org.apache.spark.sql.catalyst.analysis.{/*AliasViewChild, */Analyzer, CleanupAliases, EliminateUnions, ResolveCreateNamedStruct, ResolveHints, ResolveInlineTables, ResolveTableValuedFunctions, ResolveTimeZone, SeQuiLaAnalyzer, SubstituteUnresolvedOrdinals, TimeWindowing, TypeCoercion, UpdateOuterReferences}
 import org.apache.spark.sql.catalyst.catalog.SessionCatalog
 import org.apache.spark.sql.catalyst.plans.logical.LogicalPlan
 import org.apache.spark.sql.catalyst.rules.Rule
